@@ -8,7 +8,7 @@ let checkDB = "waiting for connection";
 require("dotenv").config();
 // Connect to Mongo
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
   })
   .then(() => {
